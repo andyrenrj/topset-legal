@@ -33,7 +33,7 @@
 </head>
 <body>
 <h1>TopSet Privacy Policy</h1>
-<p class="effective"><strong>Effective date: October 15, 2026</strong></p>
+<p class="effective"><strong>Effective date: November 1, 2026</strong></p>
 
 <p>TopSet (“the app”) is a training log and program tool for strength training. We take your privacy seriously. This policy explains what information we collect, how we use and protect it, and your rights.</p>
 
@@ -46,6 +46,7 @@
   <li><strong>Preferences</strong>: your weight unit (kg or lb) and your device’s time zone (e.g. Asia/Shanghai), used to record and count your workouts by your local date.</li>
   <li><strong>Profile photo</strong>: a profile picture you choose to upload (optional).</li>
   <li><strong>Identifiers</strong>: your account’s unique identifier, including the user identifier from Sign in with Apple.</li>
+  <li><strong>AI assistant connections</strong> (only if you connect one): see <a href="#ai-assistants">Connecting an AI assistant</a> below.</li>
 </ul>
 <p>We do <strong>not</strong> collect your location, contacts, browsing or search history, or financial information, and we do <strong>not</strong> use third parties for advertising or cross-app tracking.</p>
 
@@ -56,7 +57,21 @@
 <ul>
   <li>Your data is stored with <strong>Supabase</strong>, the backend service we use, which hosts it on our behalf as an infrastructure provider. Data is encrypted in transit.</li>
   <li>When you use <strong>Sign in with Apple</strong>, Apple handles the sign-in; we receive only the information needed to create your account.</li>
+  <li>If you connect an AI assistant, its requests reach us through <strong>Vercel</strong>, which hosts our connection address (connect.topset.top) as an infrastructure provider.</li>
+  <li>Our hosting providers keep standard request logs, which include IP addresses, for a short time for security and operations.</li>
   <li>We do <strong>not</strong> include any advertising, analytics or third-party tracking SDKs.</li>
+</ul>
+
+<h2 id="ai-assistants">Connecting an AI assistant (Claude or ChatGPT)</h2>
+<p>You can choose to connect TopSet to an AI assistant you use: currently Claude (by Anthropic) or ChatGPT (by OpenAI). Nothing is shared unless you connect one yourself. The feature is currently available by invitation only.</p>
+<ul>
+  <li><strong>You approve each connection</strong>, in the TopSet app or by signing in on our connection page. The approval screen shows which assistant is asking and what it will be able to do. The assistant never receives your password.</li>
+  <li><strong>What a connected assistant can read</strong>: your name, weight unit and time zone; the lifts you track and their e1RM; your workouts (exercises, sets, weight, reps, RPE and notes) and exercise history; and your plans. It cannot see your email address, height, body weight, gender or profile photo.</li>
+  <li><strong>What it can write</strong>: plan drafts only. A draft appears in Profile › AI assistants and becomes a plan only if you save it. An assistant cannot log sets, change or delete your plans or workouts, or change your account.</li>
+  <li><strong>Where the data goes</strong>: what an assistant reads is sent, at your request, to that assistant’s provider (Anthropic or OpenAI) and is handled under their privacy policy. We don’t control how they use it. We don’t receive your conversations with the assistant, only the requests it makes to TopSet.</li>
+  <li><strong>What we keep</strong>: a record of each connection (which assistant, what it may do, and when it was connected, last used and disconnected); access tokens, stored as one-way hashes (while a token is being renewed, an encrypted copy is kept for up to 30 minutes); daily usage counts (number of requests and amount of data, kept for 90 days); and plan drafts (unsaved drafts are removed after 14 days, and saved or discarded drafts keep no plan content). To prevent abuse, we keep a one-way hash of the IP address making a connection request for up to one day. Our own logs of these requests record only the kind of request, its result and how long it took, not your training data.</li>
+  <li><strong>Disconnecting</strong>: go to Profile › AI assistants, choose the assistant, and tap Disconnect. Its access stops immediately. Deleting your account also deletes all of its connections, drafts and usage records.</li>
+  <li><strong>Coach access</strong>: if you train with a coach in TopSet, you can let your coach’s AI assistant see your training (Profile › AI assistants › Your coach). This is off by default, and turning it off takes effect immediately.</li>
 </ul>
 
 <h2>Data retention and deletion</h2>
